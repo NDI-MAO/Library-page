@@ -8,8 +8,8 @@
 
 </head>
 <body>
- <script src="./script.js"></script>
-        <div class="bookInput">
+
+    <div class="bookInput">
             <img src="./background.avif" alt="">
             <div class="rightSide">
             <div class="title">
@@ -19,27 +19,15 @@
             <form action="#" id="myDIV">
                 <div>
                     <div><label for="btitle" >Book Name</label></div>
-                    <input 
-                    id="bName"
-                    type="text"
-                    placeholder="Book name"
-                    required>
+                    <input id="bName" type="text" placeholder="Book name"required>
                 </div>
                 <div>
                     <div><label for="author" >Book Author</label></div>
-                    <input 
-                    id="aName"
-                    type="text"
-                    placeholder="Book author" 
-                    required>
+                    <input id="aName" type="text" placeholder="Book author" required>
                 </div>
                 <div>
                     <div><label for="pages" >Book pages</label></div>
-                    <input 
-                    id="bPages"
-                    type="number"
-                    placeholder="Pages in the book" 
-                    required> 
+                    <input id="bPages" type="number" placeholder="Pages in the book" required> 
                 </div>
                <div class="choice">
                     <label for="yesno">You read the book?</label>
@@ -48,14 +36,13 @@
                     <option value="no">No</option>
                 </select>
                </div>
-               <button type="submit" onclick="addBook()">Submit book</button>
+               <button type="submit" onclick="addBook(event)">Submit book</button>
             </form>
-        </div>
         </div>
         </div>
         <div class="bookLibrary">
             <div>Book Library</div>
-            <table class="content-table">
+            <table class="content-table" id="content-table">
                 <thead>
                     <tr>
                         <th>Book Name</th>
@@ -64,39 +51,40 @@
                         <th>Status</th>
                         <th><img src="./rubbish-bin.png" alt="dustbin"></th>
                     </tr>
-                    <tbody>
+                </thead>
+                <tbody>
                         <tr>
                             <th id="nameRow">Think and Grow Rich</th>
                             <th id="authorRow">Napoleon Hill</th>
                             <th id="pageRow">238</th>
                             <th id="readRow">Read</th>
-                            <th>×</th>
+                            <th><button onclick="deleteRow(this)">×</button></th>
                         </tr>
                         <tr>
                             <th id="nameRow">Rich Dad Poor Dad</th>
                             <th id="authorRow">Robert Kiyosaki</th>
                             <th id="pageRow">336</th>
                             <th id="readRow">Read</th>
-                            <th>×</th>
+                            <th><button onclick="deleteRow(this)">×</button></th>
                         </tr>
                         <tr>
                             <th id="nameRow">The Alchemist</th>
                             <th id="authorRow">Paulo Coelho</th>
                             <th id="pageRow">156</th>
                             <th id="readRow">Not Read</th>
-                            <th>×</th>
+                            <th><button onclick="deleteRow(this)">×</button></th>
                         </tr>
                         <tr>
                             <th id="nameRow">Emotional Intelligence</th>
                             <th id="authorRow">Daniel Goleman</th>
                             <th id="pageRow">370</th>
                             <th id="readRow">Read</th>
-                            <th>×</th>
+                            <th><button onclick="deleteRow(this)">×</button></th>
                         </tr>
-                    </tbody>
-                </thead>
+                </tbody>
+              
             </table>
         </div>
-        
+    <script src="./script.js"></script>
 </body>
 </html>
