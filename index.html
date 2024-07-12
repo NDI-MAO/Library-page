@@ -14,7 +14,22 @@
             <div class="rightSide">
             <div class="title">
                 <div>Add a new book</div>
-                <button style="transform: rotate(0deg);"  onclick="myFunction()">+</button>
+                <button onclick="myFunction()">+
+                    <script>
+                        function myFunction() {
+                          let x = document.getElementById("myDIV");
+                          if (x.style.display === "none") {
+                            x.style.display = "block";
+                          } else {
+                            x.style.display = "none";
+                          }}
+                            document.addEventListener('DOMContentLoaded', function() {
+                                    let x = document.getElementById("myDIV");
+                                    x.style.display = 'none';
+                                }
+                        );
+                    </script>
+                </button>
             </div>
             <form action="#" id="myDIV">
                 <div>
@@ -31,7 +46,7 @@
                 </div>
                <div class="choice">
                     <label for="yesno">You read the book?</label>
-                    <select id="bRead" name="yesno">
+                    <select id="yesno" name="yesno">
                     <option value="yes">Yes</option>
                     <option value="no">No</option>
                 </select>
