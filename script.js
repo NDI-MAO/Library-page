@@ -1,6 +1,3 @@
-// script.js
-
-// Function to toggle the visibility of the form
 function myFunction() {
      let x = document.getElementById("myDIV");
      if (x.style.display === "none" || x.style.display === "") {
@@ -9,14 +6,11 @@ function myFunction() {
          x.style.display = "none";
      }
  }
- 
- // Hide the form initially
  document.addEventListener('DOMContentLoaded', function() {
      let x = document.getElementById("myDIV");
      x.style.display = 'none';
  });
- 
- // Book class
+
  class Book {
      constructor(title, author, pages, read) {
          this.title = title;
@@ -25,15 +19,11 @@ function myFunction() {
          this.read = read;
      }
  }
- 
- // Array to store books
+
  const myLibrary = [];
- 
- // Function to add a book
+
  function addBook(event) {
-     event.preventDefault();  // Prevent form from submitting
- 
-     // Get form data
+     event.preventDefault();  
      let title = document.getElementById('bName').value;
      let author = document.getElementById('aName').value;
      let pages = document.getElementById('bPages').value;
