@@ -28,7 +28,7 @@
                     </div>
                     <div>
                         <div><label for="pages" >Book pages</label></div>
-                        <input id="bPages" type="number" placeholder="Pages in the book" required> 
+                        <input id="bPages" type="number" placeholder="Pages in the book"required> 
                     </div>
                 <div class="choice">
                         <label for="yesno">You read the book?</label>
@@ -47,40 +47,40 @@
             <table class="content-table" id="content-table">
                 <thead>
                     <tr>
-                        <th>Book Name</th>
-                        <th>Book Author</th>
-                        <th>Pages</th>
-                        <th>Status</th>
-                        <th><img src="./rubbish-bin.png" alt="dustbin"></th>
+                        <th style="width:35%">Book Name</th>
+                        <th style="width:30%">Author</th>
+                        <th style="width: 10%">Pages</th>
+                        <th style="width: 20%">Status</th>
+                        <th style="width:5%"><img src="./rubbish-bin.png" alt="dustbin"></th>
                     </tr>
                 </thead>
                 <tbody>
                         <tr>
-                            <th id="nameRow">Think and Grow Rich</th>
-                            <th id="authorRow">Napoleon Hill</th>
-                            <th id="pageRow">238</th>
-                            <th id="readRow">Read</th>
+                            <th>Think and Grow Rich</th>
+                            <th>Napoleon Hill</th>
+                            <th>238</th>
+                            <th><button onclick="readOrNot(this)">Read</button></th>
                             <th><button onclick="deleteRow(this)">×</button></th>
                         </tr>
                         <tr>
-                            <th id="nameRow">Rich Dad Poor Dad</th>
-                            <th id="authorRow">Robert Kiyosaki</th>
-                            <th id="pageRow">336</th>
-                            <th id="readRow">Read</th>
+                            <th>Rich Dad Poor Dad</th>
+                            <th>Robert Kiyosaki</th>
+                            <th>336</th>
+                            <th><button onclick="readOrNot(this)">Read</button></th>
                             <th><button onclick="deleteRow(this)">×</button></th>
                         </tr>
                         <tr>
-                            <th id="nameRow">The Alchemist</th>
-                            <th id="authorRow">Paulo Coelho</th>
-                            <th id="pageRow">156</th>
-                            <th id="readRow">Not Read</th>
+                            <th>The Alchemist</th>
+                            <th>Paulo Coelho</th>
+                            <th>156</th>
+                            <th><button onclick="readOrNot(this)">Not Read</button></th>
                             <th><button onclick="deleteRow(this)">×</button></th>
                         </tr>
                         <tr>
-                            <th id="nameRow">Emotional Intelligence</th>
-                            <th id="authorRow">Daniel Goleman</th>
-                            <th id="pageRow">370</th>
-                            <th id="readRow">Read</th>
+                            <th>Emotional Intelligence</th>
+                            <th>Daniel Goleman</th>
+                            <th>370</th>
+                            <th><button onclick="readOrNot(this)">Read</button></th>
                             <th><button onclick="deleteRow(this)">×</button></th>
                         </tr>
                 </tbody>
