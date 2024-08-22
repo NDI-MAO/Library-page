@@ -23,7 +23,7 @@ function myFunction() {
  const myLibrary = [];
 
  function addBook(event) {
-     event.preventDefault();  
+    //event.preventDefault();  
      let title = document.getElementById('bName').value;
      let author = document.getElementById('aName').value;
      let pages = document.getElementById('bPages').value;
